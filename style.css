@@ -67,3 +67,103 @@ button:hover{
         
         color: white; 
     } 
+
+    /* MENU */ 
+    
+    .navbar{ 
+        
+        position: fixed;
+        
+        top: 0;
+        
+        width: 100%; 
+        
+        display: flex;
+        
+        justify-content: space-between; 
+        
+        align-items: center;
+        
+        padding: 20px 50px;
+        
+        background-color: rgba(0,0,0,0.6);
+        
+        backdrop-filter: blur(5px);
+        
+        z-index: 1000;
+     } 
+     
+     .logo{ 
+        
+        color: white; 
+        
+        font-size: 24px;
+        
+        font-weight: bold; 
+    
+    } 
+    
+    .menu{ 
+        
+        display: flex;
+        
+        list-style: none;
+        
+        gap: 30px; 
+    }
+    
+    .menu a{
+        
+        text-decoration: none;
+        
+        color: white; 
+        
+        font-size: 18px;
+        
+        transition: 0.3s;
+    
+    } 
+    
+    .menu a:hover{ 
+        
+        color: #2ecc71;
+    
+    }
+
+    .irrigacao{ 
+        
+        padding: 80px 20px; 
+        
+        text-align: center; 
+        
+        background: #f4f4f4;
+    } 
+    
+    .irrigacao h2{
+        
+        margin-bottom: 30px;
+        
+        color: #2e7d32; 
+    
+    } 
+    
+    .irrigacao select,
+    .irrigacao input{
+        
+        padding: 10px; 
+        
+        width: 250px; 
+        
+        font-size: 16px; 
+    } 
+    
+    #resultado{
+        
+        margin-top: 30px; 
+        
+        font-size: 22px; 
+        
+        font-weight: bold;
+        
+        color: #2e7d32; 
+    }

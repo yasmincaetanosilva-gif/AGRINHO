@@ -7,6 +7,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <nav class="navbar"> 
+    
+    <div class="logo"> 
+        🌱 AgroVision 
+    </div> 
+    
+    <ul class="menu"> 
+        
+        <li><a href="#">Início</a></li>
+        
+        <li><a href="#">Clima</a></li> 
+        
+        <li><a href="#">Irrigação</a></li> 
+        
+        <li><a href="#">Dashboard</a></li> 
+        
+        <li><a href="#">Educação</a></li> 
+    
+    </ul> 
+
+</nav> ```
 
     <section class="hero">
         <div class="overlay"></div>
@@ -30,6 +51,36 @@
                 Clima ideal para uma produção sustentável 🌱 
             </h2> ``` 
         </div>
+    </section>
+
+    <section class="irrigacao">
+        
+        <h2>💧 Simulador de Irrigação Inteligente</h2> 
+        
+        <label>Tipo de Solo:</label> 
+        
+        <select id="solo"> 
+            
+            <option value="arenoso">Arenoso</option>
+             <option value="argiloso">Argiloso</option>
+              <option value="humoso">Humoso</option> 
+            
+        </select> 
+        
+        <br><br> 
+        
+        <label>Área Plantada (hectares):</label>
+        
+        <input type="number" id="area" placeholder="Digite a área">
+        
+        <br><br>
+        
+        <button onclick="calcularIrrigacao()"> 
+            Calcular 
+        </button>
+        
+        <div id="resultado"></div> 
+    
     </section>
 
     <script src="script.js"></script>

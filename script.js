@@ -44,3 +44,82 @@ function mudarClima(tipo){
     }
 
 }
+ function calcularIrrigacao(){
+    
+    const solo = 
+    document.getElementById("solo").value;
+    
+    const area = 
+    Number(document.getElementById("area").value);
+    
+    let consumo; 
+    let sustentabilidade; 
+    let recomendacao;
+    
+    if(solo === "arenoso"){
+        
+        consumo = area * 120; 
+        
+        sustentabilidade = "Média"; 
+        
+        recomendacao = "Utilize irrigação por gotejamento para evitar desperdícios.";
+     } 
+     
+     else if(solo === "argiloso"){
+        
+        consumo = area * 80;
+        
+        sustentabilidade = "Alta";
+        
+        recomendacao = 
+        "O solo retém mais água, reduzindo a necessidade de irrigação."; 
+    
+    } 
+    
+    else{ 
+        
+        consumo = area * 60;
+        
+        sustentabilidade = "Muito Alta"; 
+        
+        recomendacao = 
+        "Excelente retenção hídrica e menor consumo de água.";
+     } 
+     
+     document.getElementById("resultado").innerHTML =
+     
+     ` 
+     <p>💧 Água necessária: ${consumo} litros/dia</p>
+     
+     <p>🌱 Sustentabilidade: ${sustentabilidade}</p>
+
+     <p>✅ ${recomendação}</p>
+     
+     `;
+    }
+    
+    const solo = 
+    document.getElementById("solo").value;
+    
+    const area = 
+    Number(document.getElementById("area").value);
+    
+    let consumo;
+    
+    if(solo === "arenoso"){ 
+        consumo = area * 120;
+     } 
+     
+     else if(solo === "argiloso"){
+        consumo = area * 80; 
+    } 
+    
+    else{
+         consumo = area * 60;
+         } 
+         
+         document.getElementById("resultado")
+          .innerHTML =
+           `💧 Necessidade estimada: ${consumo} litros de água por dia`;
+        
+        } 
