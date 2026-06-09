@@ -49,3 +49,21 @@ button:hover{
     transform: scale(1.05);
 }
 /* Removida a chave extra que estava aqui */
+.clima-botoes{
+     margin-top: 30px; 
+     
+     display: flex; 
+     
+     justify-content: center;
+     
+     gap: 15px; 
+    
+    }
+    
+    #mensagem-clima{ 
+        margin-top: 30px; 
+        
+        font-size: 22px; 
+        
+        color: white; 
+    } 
