@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroVision</title>
+    <title>SustentAgro</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <nav class="navbar"> 
     
     <div class="logo"> 
-        🌱 AgroVision 
+        🌱 SustentAgro 
     </div> 
     
     <ul class="menu"> 
         
         <li><a href="#">Início</a></li>
         
-        <li><a href="#">Clima</a></li> 
+        <li><a href="#irrigação">Irrigação</a></li> 
         
-        <li><a href="#">Irrigação</a></li> 
+        <li><a href="#dashboard">Dashboard</a></li> 
         
-        <li><a href="#">Dashboard</a></li> 
-        
-        <li><a href="#">Educação</a></li> 
+        <li><a href="#recomendações">Recomendações</a></li> 
+
+        <li><a href="#sobre">Sobre</a></li> 
     
     </ul> 
 
@@ -33,7 +33,7 @@
         <div class="overlay"></div>
     
         <div class="content">
-            <h1>AgroVision 🌱</h1>
+            <h1>SustentAgro 🌱</h1>
             <p>Tecnologia e sustentabilidade para o futuro agro</p>
             <button id="btn">Explorar Projeto</button>
             <div class="clima-botoes"> 
@@ -53,7 +53,7 @@
         </div>
     </section>
 
-    <section class="irrigacao">
+    <section id="irrigação" class="irrigacao">
         
         <h2>💧 Simulador de Irrigação Inteligente</h2> 
         
@@ -84,5 +84,76 @@
     </section>
 
     <script src="script.js"></script>
+
+    <section id="dashboard" class="dashboard">
+        
+        <h2>📊 Dashboard Ambiental</h2> 
+        
+        <div class="card"> 
+            <h3>💧 Economia de Água</h3> 
+            <div class="barra">
+                 <div class="progresso agua"></div> 
+            </div> 
+            <span>78%</span>
+         </div> 
+         
+         <div class="card">
+             <h3>🌱 Sustentabilidade</h3>
+              <div class="barra"> 
+                <div class="progresso sustentabilidade"></div> 
+            </div> 
+            <span>92%</span> 
+        </div> 
+        
+        <div class="card"> 
+            <h3>☀️ Energia Limpa</h3> 
+            <div class="barra">
+                 <div class="progresso energia"></div> 
+            </div> 
+            <span>85%</span> 
+        </div> 
+        
+        <div class="card"> 
+            <h3>🚜 Eficiência Agrícola</h3> 
+            <div class="barra">
+                 <div class="progresso eficiencia"></div> 
+            </div> 
+            <span>88%</span> 
+        </div> 
+    </section>
+
+    <section id="recomendações" class="recomendacoes"> 
+        
+        <h2>🧠 Recomendações Inteligentes</h2>
+        
+        <button onclick="gerarRecomendacao()">
+             Gerar Recomendação 
+        </button>
+        
+        <div id="recomendacao"></div> 
+    
+    </section>
+    
+    <section ide="sobre" class="sobre">
+    
+        <h2>🌱 Sobre o SustentAgro</h2> 
+        
+        <p> 
+            
+            O SustentAgro é uma plataforma educativa desenvolvida para auxiliar produtores rurais na tomada de decisões sustentáveis. O sistema utiliza informações sobre clima, solo e irrigação para incentivar práticas agrícolas responsáveis e eficientes. 
+        </p> 
+    
+    </section>
+    
+    <footer> 
+        
+        <p>SustentAgro © 2026</p>
+        
+        <p>Projeto desenvolvido para o Programa Agrinho</p> 
+    
+    </footer>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

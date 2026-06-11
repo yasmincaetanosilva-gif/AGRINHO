@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -167,3 +171,155 @@ button:hover{
         
         color: #2e7d32; 
     }
+
+    /* DASHBOARD */ 
+    
+    .dashboard{ 
+        
+        padding: 80px 20px; 
+        
+        background: white; 
+        
+        text-align: center; 
+    } 
+    
+    .dashboard h2{ 
+        
+        color: #2e7d32; 
+        
+        margin-bottom: 40px;
+     }
+     
+     .card{ 
+        
+        max-width: 600px;
+        
+        margin: 25px auto;
+     } 
+     
+     .barra{ 
+        
+        width: 100%; 
+        
+        height: 25px; 
+        
+        background: #ddd;
+        
+        border-radius: 20px;
+        
+        overflow: hidden;
+     } 
+     
+     .progresso{ 
+        
+        height: 100%; 
+        
+        background: #2ecc71;
+        
+        border-radius: 20px; 
+    } 
+    
+    .agua{ 
+        width: 78%;
+     }
+     
+     .sustentabilidade{ 
+        width: 92%;
+     } 
+     
+     .energia{
+         width: 85%;
+     }
+     
+     .eficiencia{
+         width: 88%;
+     } 
+     
+     .card span{ 
+        
+        display: block; 
+        
+        margin-top: 10px; 
+        
+        font-weight: bold;
+        
+        color: #2e7d32;
+     }
+
+     .progresso{ 
+        
+        animation: crescer 2s ease-in-out;
+     } 
+     
+     @keyframes crescer{
+        
+        from{ 
+            width: 0;
+         } 
+    }
+
+    .recomendacoes{ 
+        
+        padding: 80px 20px; 
+        
+        text-align: center; 
+        
+        background: #eef8ee;
+     } 
+     
+     .recomendacoes h2{
+        
+        color: #2e7d32; 
+        
+        margin-bottom: 30px;
+    } 
+    
+    #recomendacao{
+        
+        margin-top: 30px;
+        
+        font-size: 22px;
+        
+        font-weight: bold; 
+        
+        color: #2e7d32;
+     }
+
+     .sobre{
+        
+        padding: 80px 20px;
+        
+        text-align: center; 
+        
+        background: white;
+     }
+     
+     .sobre h2{ 
+        
+        color: #2e7d32; 
+        
+        margin-bottom: 20px; 
+    } 
+    
+    .sobre p{ 
+        
+        max-width: 800px; 
+        
+        margin: auto; 
+        
+        line-height: 1.8;
+        
+        font-size: 18px; 
+    } 
+    
+    footer{ 
+        
+        background: #2e7d32; 
+        
+        color: white; 
+        
+        text-align: center;
+        
+        padding: 30px;
+     }
+
